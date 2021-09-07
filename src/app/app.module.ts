@@ -13,6 +13,7 @@ import { ListComponent } from './cv/list/list.component';
 import { CardComponent } from './cv/card/card.component';
 import { WordComponent } from './directives/word/word.component';
 import { RainbowDirective } from './directives/rainbow/rainbow.directive';
+import { DefaultImagePipe } from './pipes/default-image.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RainbowDirective } from './directives/rainbow/rainbow.directive';
     ListComponent,
     CardComponent,
     WordComponent,
-    RainbowDirective
+    RainbowDirective,
+    DefaultImagePipe
   ],
   imports: [
     BrowserModule,

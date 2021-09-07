@@ -14,6 +14,8 @@ cvs: Cv[] = [];
   ngOnInit(): void {
     this.cvs.push(new Cv(1,'terrier1', 'bastien1',11,'train1','rotating_card_profile.png',1));
     this.cvs.push(new Cv(2,'terrier2', 'bastien2',22,'train2','rotating_card_profile2.png',2));
+    this.cvs.push(new Cv(3,'terrier3', 'bastien3',33,'train3','',3));
+
   }
   onItemClicked(selectedCv: Cv):void{
 this.onItemSelected.emit(selectedCv);
