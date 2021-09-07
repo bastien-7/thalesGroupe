@@ -1,0 +1,16 @@
+<p [ngStyle]="{'color':color, 'font-size':fontSize + 'px', 'font-family':font}">word works!</p>
+  <div class="row">
+    <div class="col-sm">
+      <input type="color" [(ngModel)]="color" class="form-control">
+    </div>
+    <div class="col-sm">
+      <input type="number" [(ngModel)]="fontSize" class="form-control">
+    </div>
+    <div class="col-sm">
+
+      <select [(ngModel)]='font' id="cars" name="fonts" class="dropdown form-control">
+        <option value="arial">Arial</option>
+        <option value="garamond">sans-serif</option>
+      </select>
+    </div>
+</div>

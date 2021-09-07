@@ -1,0 +1,6 @@
+<ol class="list-group">
+  <li *ngFor="let cv of cvs; let isOdd = odd" class="list-group-item" [ngClass]="{odd: isOdd}">
+    <app-item [cv]="cv" (itemSelected)="onItemClicked($event)"></app-item>
+  </li>
+</ol>
+
